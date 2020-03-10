@@ -1,4 +1,8 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
+mb_internal_encoding('UTF-8');
+mb_http_output('UTF-8');
+
 if (!ini_get('display_errors')) ini_set('display_errors', 1);
 if (!ini_get('display_startup_errors')) ini_set('display_startup_errors', 'on');
 // Tüm hataları görelim
