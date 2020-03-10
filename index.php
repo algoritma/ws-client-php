@@ -13,7 +13,7 @@
     echo '<a href="efatura/einvoice-demo.php">E-Fatura Demo</a><br>';
     echo 'E-Fatura ekranlarında kullanılacak servislerin kullanımı gösterilmektedir.<br>';
 
-    echo '<a href="efatura/einvoice-demo.php">E-Arşiv Demo</a><br>';
+    echo '<a href="earsiv/earchive-demo.php">E-Arşiv Demo</a><br>';
     echo 'E-Arşiv ekranlarında kullanılacak servislerin kullanımı gösterilmektedir.<br>';
 
 
