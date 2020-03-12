@@ -1,4 +1,9 @@
 <?php
+/*
+webservis oturumunuzun aktif olduğundan emin olun.
+oturum sona ermiş ise önce auth/login.php ile giriş yapın.
+*/
+
 header('Content-Type: text/html; charset=utf-8');
 mb_internal_encoding('UTF-8');
 mb_http_output('UTF-8');
