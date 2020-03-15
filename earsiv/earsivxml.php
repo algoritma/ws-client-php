@@ -1,4 +1,12 @@
 <?php
+/*
+ÖNEMLİ NOT:
+xml oluşturma efaturanın en önemli aşamasıdır.
+Aşağıdaki xml örnek olarak hazırlanmıştır.
+UBL-TR dokumantasyonunu (UBL-TR Ortak Elemanlar/Kod Listeleri vb) incelemeniz önerilir.
+Kendi kullanım alanlarınıza ve ihtiyacınıza göre bu örneği geliştirmeniz gerekecektir.
+*/
+
 //header('Content-type: text/xml');
 $objDateTime = new DateTime('NOW');
 
