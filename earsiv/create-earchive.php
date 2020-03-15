@@ -43,7 +43,7 @@ try {
 			"EARSIV_PROPERTIES"	=>	array(
 				"EARSIV_TYPE"		=>	"NORMAL",
 				"EARSIV_EMAIL_FLAG"	=>	"Y",
-				"EARSIV_EMAIL"		=>	"entegrasyon@izibiz.com.tr",
+				"EARSIV_EMAIL"		=>	"info@izibiz.com.tr",
 				"SUB_STATUS"		=>	"NEW"
 			),
 			"INVOICE_CONTENT"	=>	$content
