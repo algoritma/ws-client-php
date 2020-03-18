@@ -32,19 +32,7 @@ try {
 	//$content = file_get_contents('earsivxml.php');
 	require_once 'earsivxml.php';
 
-	/*
-	// earsivxml'den gelen $content xml string'in ubl ile doğrulanması.
-	// UBLTR_1.2.1_Paketi.zip dosyası içeriği kullanılır. ilgili klasör yolunu belirtiniz.
-	$dom = new DomDocument;
-	$dom->loadXML($content);
-	if ($dom->schemaValidate('../UBLTR_1.2.1_Paketi/xsdrt/maindoc/UBL-Invoice-2.1.xsd')) {
-	    // Valid response from service
-	} else {
-	    echo "Invalid XML inivoce..";
-	    exit();
-	}
-	*/
-	
+
 	$Request = array(
 			"REQUEST_HEADER"	=>	array(
 			"SESSION_ID"		=>	$Res->SESSION_ID,
