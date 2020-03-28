@@ -25,11 +25,13 @@ function FaturaXslDosyasiOlustur($FaturaXmlDosyasi)
 
     $FaturaXslDosyasi=str_replace('<xsl:stylesheet version="2.0"', '<xsl:stylesheet version="1.0"', $FaturaXslDosyasi);    //Php XSL eklensisi stylesheet 2.0 desteklemiyor
     $FaturaXslDosyasi=str_replace('<xsl:character-map name="a">', '', $FaturaXslDosyasi);
+    	//--bu kısım izibiz xslt'si için eklendi.--
 		$FaturaXslDosyasi=str_replace('<xsl:output-character character="&#38;" string="&amp;" />', '', $FaturaXslDosyasi);
 		$FaturaXslDosyasi=str_replace('<xsl:output-character character="&#34;" string="&quot;" />', '', $FaturaXslDosyasi);
 		$FaturaXslDosyasi=str_replace('<xsl:output-character character="&#60;" string="&lt;" />', '', $FaturaXslDosyasi);
 		$FaturaXslDosyasi=str_replace('<xsl:output-character character="&#62;" string="&gt;"/>', '', $FaturaXslDosyasi);
 		$FaturaXslDosyasi=str_replace('<xsl:output-character character="&#39;" string="&apos;"/>', '', $FaturaXslDosyasi);
+		//-----------------------------------------
     $FaturaXslDosyasi=str_replace('<xsl:output-character character="&#128;" string=""/>', '', $FaturaXslDosyasi);
     $FaturaXslDosyasi=str_replace('<xsl:output-character character="&#129;" string=""/>', '', $FaturaXslDosyasi);
     $FaturaXslDosyasi=str_replace('<xsl:output-character character="&#130;" string=""/>', '', $FaturaXslDosyasi);
@@ -102,8 +104,11 @@ return $html;
 
 //***********************************   EFATURA GÖSTER  ***********************************//   
 
+//--- Örnek
+
 header('Content-Type: text/html; charset=utf-8');
 
-//echo FaturaHtmlDosyasiOlustur(file_get_contents( dirname( __FILE__ )."/TemelFaturaOrnegi.xml" ))
-echo FaturaHtmlDosyasiOlustur(file_get_contents( dirname( __FILE__ )."/test-fatura.xml" ))
+echo FaturaHtmlDosyasiOlustur(file_get_contents( dirname( __FILE__ )."/test-fatura.xml" ));
+
+
 ?>
